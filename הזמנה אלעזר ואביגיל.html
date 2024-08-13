@@ -1,0 +1,287 @@
+<html><head><base href="https://alazarandavigail.wedding/" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>החתונה של אלעזר ואביגיל</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Amatic+SC:wght@700&display=swap');
+
+  :root {
+    --primary-color: #f9f7f3;
+    --secondary-color: #5c4f3d;
+    --accent-color: #d4af37;
+    --text-color: #2c2417;
+    --background-gradient: linear-gradient(135deg, #f9f7f3 0%, #e8d7be 100%);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Heebo', sans-serif;
+    background: var(--background-gradient);
+    color: var(--text-color);
+    direction: rtl;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    line-height: 1.4;
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 70px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .countdown-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  }
+
+  .countdown-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+
+  .countdown-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 2px;
+    color: var(--primary-color);
+  }
+
+  .wedding-details {
+    font-size: 1rem;
+    margin: 15px 0;
+    line-height: 1.4;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+  }
+
+  .btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  }
+
+  .message {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+  }
+
+  .decorative-border {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    pointer-events: none;
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+    }
+
+    .countdown-item {
+      min-width: 60px;
+      padding: 8px;
+    }
+
+    .countdown-value {
+      font-size: 1.7rem;
+    }
+
+    .countdown-label {
+      font-size: 0.7rem;
+    }
+
+    .wedding-details {
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      padding: 8px 12px;
+      font-size: 0.8rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="background">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="hearts" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M20 10 Q15 0 10 10 Q0 15 10 30 Q20 20 30 30 Q40 15 30 10 Q25 0 20 10Z" fill="#d4af37" opacity="0.1" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#hearts)" />
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="decorative-border"></div>
+    <h1>אלעזר ואביגיל מתחתנים</h1>
+    <p class="subtitle">אשמח מאוד לראותך משתתף בשמחתי</p>
+    <div class="countdown">
+      <div class="countdown-item">
+        <span class="countdown-value" id="days">00</span>
+        <span class="countdown-label">ימים</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="hours">00</span>
+        <span class="countdown-label">שעות</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="minutes">00</span>
+        <span class="countdown-label">דקות</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="seconds">00</span>
+        <span class="countdown-label">שניות</span>
+      </div>
+    </div>
+    <div class="wedding-details">
+      <p><strong>אלעזר & אביגיל</strong></p>
+      <p><i class="fas fa-map-marker-alt"></i> אולמי "בית ישראל"</p>
+      <p><i class="far fa-calendar-alt"></i> יום שלישי כ״ג באב | 27/08</p>
+      <p><i class="far fa-clock"></i> שעה: 19:00</p>
+    </div>
+    <div class="links">
+      <a href="https://calendar.app.google/cnznLDhcKnmsjuoN7" class="btn" target="_blank">
+        <i class="far fa-calendar-plus"></i> שמירה ביומן
+      </a>
+      <a href="https://waze.com/ul/hsv9hck3qn" class="btn" target="_blank">
+        <i class="fab fa-waze"></i> ניווט ב-Waze
+      </a>
+    </div>
+    <p class="message" id="message"></p>
+  </div>
+
+  <script>
+    const weddingDate = new Date('2024-08-27T19:00:00+03:00');
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = weddingDate - now;
+
+      if (diff > 0) {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById('days').textContent = days.toString().padStart(2, '0');
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        document.getElementById('message').textContent = 'אנחנו מצפים לראותכם!';
+      } else {
+        document.querySelector('.countdown').style.display = 'none';
+        document.getElementById('message').textContent = 'מזל טוב לאלעזר ואביגיל! היום הגדול הגיע!';
+      }
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Add a smooth fade-in effect
+    document.body.style.opacity = 0;
+    window.addEventListener('load', function() {
+      document.body.style.transition = 'opacity 1s ease-in';
+      document.body.style.opacity = 1;
+    });
+  </script>
+</body>
+</html>
